@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">quiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="background">background</string>
+    <string name="quiz">QUIZ</string>
+    <string name="app">APP</string>
+    <string name="play">PLAY</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="todo">TODO</string>
+    <string name="your_score">Your Score</string>
+    <string name="answer">ANSWER</string>
+    <string name="menu">MENU</string>
+    <string name="main">main</string>
+
+    <string name="submit">SUBMIT</string>
+    <string name="qt">qt</string>
+    <string name="ans_01">PITEX</string>
+    <string name="ans_02">8</string>
+    <string name="ans_03">Carbon copy</string>
+    <string name="ans_04">Internet Service Provider</string>
+    <string name="ans_05">Hyper Text Transfer Protocol</string>
+    <string name="ans_06">Image file</string>
+    <string name="ans_07">"lo"</string>
+    <string name="ans_08">Backup file</string>
+    <string name="ans_10">Windows 98</string>
+    <string name="ans_11">Modulator Demodulator</string>
+    <string name="ans_12">One is public, the other is private</string>
+    <string name="ans_13">A client</string>
+    <string name="ans_14"> STP</string>
+    <string name="ans_15">Author Web Pages</string>
+    <string name="ans_16">A client</string>
+    <string name="ans_17">Internet Control Message Protocol</string>
+    <string name="ans_18">Department of Defense</string>
+    <string name="ans_19">A program that catalogs Web sites</string>
+    <string name="ans_20">Uniform Resource Locator</string>
+    <string name="ans_21">World Wide Web</string>
+    <string name="timer">timer</string>
+    <string name="enter_your_name">Enter your name:</string>
+
+</resources>

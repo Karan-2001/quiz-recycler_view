@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_screen">
+
+    <fragment
+        android:id="@+id/main_screen"
+        android:name="com.example.quiz.main_screen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_main_screen_to_questions2"
+            app:destination="@id/questions2" />
+        <argument
+            android:name="p_name"
+            app:argType="string"
+            android:defaultValue="NILL" />
+        <argument
+            android:name="P_score"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/answer2"
+        android:name="com.example.quiz.answer"
+        android:label="fragment_answer"
+        tools:layout="@layout/fragment_answer" >
+        <argument
+            android:name="question_arraylist"
+            app:argType="string[]" />
+        <argument
+            android:name="answer_arraylist"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_answer2_to_main_screen"
+            app:destination="@id/main_screen" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/score_board"
+        android:name="com.example.quiz.score_board"
+        android:label="fragment_score_board"
+        tools:layout="@layout/fragment_score_board" >
+        <action
+            android:id="@+id/action_score_board_to_answer2"
+            app:destination="@id/answer2" />
+        <action
+            android:id="@+id/action_score_board_to_main_screen"
+            app:destination="@id/main_screen" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="question_array_list"
+            app:argType="string[]" />
+        <argument
+            android:name="answer_array_list"
+            app:argType="string[]" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/questions2"
+        android:name="com.example.quiz.questions"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions" >
+        <action
+            android:id="@+id/action_questions2_to_score_board"
+            app:destination="@id/score_board" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
